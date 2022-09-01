@@ -32,3 +32,105 @@ body {
   width: 1366px;
 }
 
+.page-header {
+  width: 1170px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.logo-link:focus-visible {
+  outline: 2px solid #2D3440;
+  outline-offset: -1px;
+}
+
+.navigation {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.navigation-list {
+  list-style-type: none;
+  display: flex;
+}
+
+.navigation-link {
+  color: #2D3440;
+  text-decoration: none;
+  padding: 8px 16px;
+}
+
+.navigation-link:hover {
+  background-color: rgba(252, 252, 252, 0.5);
+  border-radius: 30px;
+}
+
+.navigation-link:active {
+  background-color: #FCFCFC;
+}
+
+.navigation-link:focus-visible {
+  background-color: rgba(252, 252, 252, 0.5);
+  outline: 2px solid #2D3440;
+  outline-offset: -1px;
+  border-radius: 30px;
+}
+
+.current {
+  color: #FCFCFC;
+  background-color: #FF4A78;
+  border-radius: 30px;
+}
+
+.navigation-catalog-list {
+  background-color: #FCFCFC;
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+}
+
+.navigation-catalog-item {
+}
+
+.navigation-catalog-link {
+  display: flex;
+  color: #2D3440;
+  text-decoration: none;
+  padding: 6px 16px;
+}
+
+.navigation-catalog-link:hover {
+  background-color: #FFCBD8;
+}
+
+.navigation-catalog-link:active {
+  background-color: #FF7799;;
+}
+
+.navigation-catalog-link:focus-visible {
+  outline: 2px solid #2D3440;
+}
+
+.navigation-item:hover .navigation-catalog-list {
+  display: block;
+}
+
+.navigation-catalog-list {
+  display: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
