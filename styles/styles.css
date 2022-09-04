@@ -35,7 +35,6 @@ body {
 .page-header {
   width: 1170px;
   margin: 0 auto;
-  display: flex;
 }
 
 .logo-link:focus-visible {
@@ -47,11 +46,22 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  position: relative;
+  display: flex;
+  margin-top: 24px;
 }
 
 .navigation-list {
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 2px 0;
+  margin-left: 16px;
+}
+
+.navigation-item {
+  margin-bottom: 16px;
 }
 
 .navigation-link {
@@ -85,13 +95,16 @@ body {
 .navigation-catalog-list {
   background-color: #FCFCFC;
   list-style-type: none;
-  padding: 0;
+  padding: 8px 0;
   display: flex;
   flex-direction: column;
   font-size: 14px;
+  position: absolute;
 }
 
 .navigation-catalog-item {
+  position: relative;
+
 }
 
 .navigation-catalog-link {
@@ -99,6 +112,21 @@ body {
   color: #2D3440;
   text-decoration: none;
   padding: 6px 16px;
+}
+
+.navigation-catalog-item:first-child .navigation-catalog-link:before {
+  content: "";
+  position: absolute;
+  width: 103px;
+  height: 1px;
+  background-color: #B9B9B9;
+  top: 40px;
+}
+
+.navigation-catalog-item:first-child  .navigation-catalog-link{
+  padding: 8px 16px;
+  font-weight: 700;
+  margin-bottom: 8px;
 }
 
 .navigation-catalog-link:hover {
@@ -118,7 +146,7 @@ body {
 }
 
 .navigation-catalog-list {
-  display: none;
+  display: block;
 }
 
 .visually-hidden {
