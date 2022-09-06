@@ -37,9 +37,32 @@ body {
   margin: 0 auto;
 }
 
+.logo-link {
+  display: block;
+  text-align: center;
+  position: relative;
+  padding: 28px 69px;
+}
+
+.svg-logo-link {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.logo-link:hover {
+  opacity: 0.5;
+}
+
 .logo-link:focus-visible {
   outline: 2px solid #2D3440;
   outline-offset: -1px;
+}
+
+.logo-link:active {
+  opacity: 0.3;
 }
 
 .navigation {
@@ -68,28 +91,21 @@ body {
   color: #2D3440;
   text-decoration: none;
   padding: 8px 16px;
-}
-
-.navigation-link:hover {
-  background-color: rgba(252, 252, 252, 0.5);
   border-radius: 30px;
 }
 
-.navigation-link:active {
+:is(.navigation-link, .navigation-user-link):hover {
+  background-color: rgba(252, 252, 252, 0.5);
+}
+
+:is(.navigation-link, .navigation-user-link):active {
   background-color: #FCFCFC;
 }
 
-.navigation-link:focus-visible {
+:is(.navigation-link, .navigation-user-link):focus-visible {
   background-color: rgba(252, 252, 252, 0.5);
   outline: 2px solid #2D3440;
   outline-offset: -1px;
-  border-radius: 30px;
-}
-
-.current {
-  color: #FCFCFC;
-  background-color: #FF4A78;
-  border-radius: 30px;
 }
 
 .navigation-catalog-list {
@@ -100,11 +116,11 @@ body {
   flex-direction: column;
   font-size: 14px;
   position: absolute;
+  top: 54px;
 }
 
 .navigation-catalog-item {
   position: relative;
-
 }
 
 .navigation-catalog-link {
@@ -139,14 +155,80 @@ body {
 
 .navigation-catalog-link:focus-visible {
   outline: 2px solid #2D3440;
+  outline-offset: -1px;
+}
+
+.navigation-catalog-list {
+  display: none;
 }
 
 .navigation-item:hover .navigation-catalog-list {
   display: block;
 }
 
-.navigation-catalog-list {
+.navigation-item:focus-within .navigation-catalog-list {
   display: block;
+}
+
+.navigation-user-list {
+  display: flex;
+  margin-left: auto;
+  list-style-type: none;
+}
+
+.navigation-user-item {
+}
+
+.navigation-user-link {
+  display: block;
+  text-align: center;
+  color: #2D3440;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 6px 16px 6px 38px;
+  background-color: rgba(252, 252, 252, 0.3);
+  border-radius: 30px;
+  position: relative;
+}
+
+.search-link {
+  padding: 16px;
+}
+
+.svg-search-link {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.svg-enter-link {
+  position: absolute;
+  left: 16px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.svg-basket-link {
+  position: absolute;
+  left: 16px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.navigation-tel-link {
+  font-weight: 700;
+  color: #2D3440;
+  text-decoration: none;
+}
+
+.current {
+  color: #FCFCFC;
+  background-color: #FF4A78;
 }
 
 .visually-hidden {
