@@ -425,6 +425,7 @@ body {
 }
 
 .popover-basket {
+  display: none;
   padding: 48px;
   position: absolute;
   background-color: #FCFCFC;
