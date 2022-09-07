@@ -52,16 +52,16 @@ body {
   bottom: 0;
 }
 
-:is(.logo-link, .navigation-tel-link, .registration-link):hover {
+:is(.logo-link, .navigation-tel-link, .registration-link, .popover-basket-link, .button-delete-icon):hover {
   opacity: 0.5;
 }
 
-:is(.logo-link, .navigation-tel-link, .registration-link):focus-visible {
+:is(.logo-link, .navigation-tel-link, .registration-link, .popover-basket-link, .button-delete-icon):focus-visible {
   outline: 2px solid #2D3440;
   outline-offset: -1px;
 }
 
-:is(.logo-link, .navigation-tel-link, .registration-link):active {
+:is(.logo-link, .navigation-tel-link, .registration-link, .popover-basket-link, .button-delete-icon):active {
   opacity: 0.3;
 }
 
@@ -247,8 +247,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  padding: 0;
-  padding-left: 16px;
+  padding: 0 0 0 16px;
   width: 324px;
   min-height: 48px;
   border: 1px solid #B9B9B9;
@@ -329,8 +328,7 @@ body {
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
-  margin: 0;
-  margin-bottom: 32px;
+  margin: 0 0 32px 0;
 }
 
 :is(.email-field, .password-field) {
@@ -424,6 +422,100 @@ body {
   text-decoration: none;
   border-bottom: 1px solid #2D3440;
   font-size: 14px;
+}
+
+.popover-basket {
+  padding: 48px;
+  position: absolute;
+  background-color: #FCFCFC;
+  top: 40px;
+  right: 0;
+  z-index: 1;
+  border-color: rgba(45, 52, 64, 0.12);
+  border-radius: 4px;
+}
+
+.popover-basket-title {
+  margin: 1px 0 31px 0;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #2D3440;
+}
+
+.popover-basket-list {
+  padding: 0;
+}
+
+.popover-basket-item {
+  display: grid;
+  align-items: center;
+  gap: 5px;
+  grid-template-columns: 324px 14px;
+}
+
+.popover-basket-link {
+  grid-column: 1/2;
+  display: grid;
+  grid-template-columns: 151px 105px;
+  grid-template-rows: auto auto;
+  text-decoration: none;
+  padding-left: 61px;
+}
+
+.raspberry-link {
+  background-image: url(../images/header/raspberry.png);
+  background-repeat: no-repeat;
+  background-position-y: 50%;
+}
+
+.bubble-gum-link {
+  background-image: url(../images/header/bubble-gum.png);
+  background-repeat: no-repeat;
+  background-position-y: 50%;
+}
+
+.popover-basket-item + .popover-basket-item {
+  margin-top: 24px;
+}
+
+.basket-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #2D3440;
+  margin: 0 0 4px 0;
+}
+
+.basket-text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #B9B9B9;
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.basket-price {
+  color: #2D3440;
+  margin: 1px 0 0 14px;
+  grid-column: 2/3;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 44px;
+  grid-row: 1/3;
+}
+
+.button-delete-icon {
+  grid-column: 2/3;
+  background-image: url("../images/header/delete-icon.svg");
+  background-repeat: no-repeat;
+  cursor: pointer;
+  background-color: #FCFCFC;
+  border: none;
+  background-position: 2px 3px;
+  padding: 8px;
 }
 
 .current {
