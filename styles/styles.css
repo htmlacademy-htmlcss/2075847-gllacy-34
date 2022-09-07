@@ -52,16 +52,16 @@ body {
   bottom: 0;
 }
 
-:is(.logo-link, .navigation-tel-link):hover {
+:is(.logo-link, .navigation-tel-link, .registration-link):hover {
   opacity: 0.5;
 }
 
-:is(.logo-link, .navigation-tel-link):focus-visible {
+:is(.logo-link, .navigation-tel-link, .registration-link):focus-visible {
   outline: 2px solid #2D3440;
   outline-offset: -1px;
 }
 
-:is(.logo-link, .navigation-tel-link):active {
+:is(.logo-link, .navigation-tel-link, .registration-link):active {
   opacity: 0.3;
 }
 
@@ -224,6 +224,7 @@ body {
 }
 
 .popover-search {
+  display: none;
   position: absolute;
   background-color: #FCFCFC;
   top: 40px;
@@ -232,6 +233,10 @@ body {
   padding: 24px 16px;
   border-color: rgba(45, 52, 64, 0.12);
   border-radius: 4px;
+}
+
+.popover-search-open {
+  display: block;
 }
 
 .search-form {
@@ -255,6 +260,7 @@ body {
   background-image: url("../images/header/delete-icon.svg");
   background-repeat: no-repeat;
   background-color: #FCFCFC;
+  background-position: 2px 2px;
   color: #2D3440;
   opacity: 0.4;
   cursor: pointer;
@@ -265,7 +271,7 @@ body {
   width: 16px;
   height: 16px;
   display: none;
-  margin: 3px;
+  padding: 0;
 }
 
 .field:focus-visible {
@@ -305,6 +311,119 @@ body {
   color: #2D3440;
   text-decoration: none;
   line-height: 32px;
+}
+
+.popover-enter {
+  display: none;
+  position: absolute;
+  background-color: #FCFCFC;
+  top: 40px;
+  right: 0;
+  z-index: 1;
+  padding: 48px 48px 52px 48px;
+  border-color: rgba(45, 52, 64, 0.12);
+  border-radius: 4px;
+}
+
+.popover-enter-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+:is(.email-field, .password-field) {
+  width: 324px;
+  height: 48px;
+  padding-left: 16px;
+  border: 1px solid #B9B9B9;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(45, 52, 64, 1);
+  box-sizing: border-box;
+}
+
+.email-field {
+  letter-spacing: 0.012em;
+}
+
+.password-field {
+  letter-spacing: 0.13em;
+}
+
+:is(.email-field, .password-field):focus-visible {
+  outline: none;
+}
+
+.email-field {
+  margin-bottom: 16px;
+}
+
+.password-field {
+  margin-bottom: 32px;
+}
+
+.registration-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  border: none;
+  color: #FCFCFC;
+  padding: 12px 32px;
+  background: #FF2F64;
+  outline: 4px solid rgba(255, 47, 100, 0.3);
+  border-radius: 26px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.button:hover {
+  background: rgba(252, 252, 252, 0.3);
+  outline: 4px solid #FF2F64;
+  color: #2D3440;
+}
+
+.button:active {
+  background-color: #FEAFC3;
+  outline: 2px solid #2D3440;
+}
+
+.button:focus-visible {
+  outline: 2px solid #2D3440;
+}
+
+.button:disabled {
+  background: #B9B9B9;
+  outline: 4px solid rgba(185, 185, 185, 0.3);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #565C66;
+}
+
+.registration-list {
+  list-style-type: none;
+  padding: 0;
+  margin-left: 23px;
+}
+
+.registration-item + .registration-item {
+  margin-top: 4px;
+}
+
+.registration-link {
+  color: #2D3440;
+  text-decoration: none;
+  border-bottom: 1px solid #2D3440;
+  font-size: 14px;
 }
 
 .current {
