@@ -454,6 +454,20 @@ body {
   grid-template-columns: 324px 14px;
 }
 
+.popover-basket-item + .popover-basket-item {
+  margin-top: 24px;
+}
+
+.popover-basket-item:last-child::before {
+  width: 345px;
+  height: 1px;
+  background-color: rgba(231, 231, 231, 1);
+  content: "";
+  position: absolute;
+  top: 257px;
+  left: 47px;
+}
+
 .popover-basket-link {
   grid-column: 1/2;
   display: grid;
@@ -473,10 +487,6 @@ body {
   background-image: url(../images/header/bubble-gum.png);
   background-repeat: no-repeat;
   background-position-y: 50%;
-}
-
-.popover-basket-item + .popover-basket-item {
-  margin-top: 24px;
 }
 
 .basket-title {
