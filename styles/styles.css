@@ -190,11 +190,12 @@ body {
   list-style-type: none;
   padding: 0;
   flex-wrap: wrap;
-  min-width: 431px;
+  min-width: 445px;
 }
 
 .navigation-user-item {
   margin-left: 16px;
+  position: relative;
 }
 
 .navigation-user-link {
@@ -220,6 +221,67 @@ body {
   left: 0;
   bottom: 0;
   margin: auto;
+}
+
+.popover-search {
+  position: absolute;
+  background-color: #FCFCFC;
+  top: 40px;
+  right: 0;
+  z-index: 1;
+  padding: 24px 16px;
+  border-color: rgba(45, 52, 64, 0.12);
+  border-radius: 4px;
+}
+
+.search-form {
+
+}
+
+.field {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 0;
+  padding-left: 16px;
+  width: 324px;
+  min-height: 48px;
+  border: 1px solid #B9B9B9;
+  border-radius: 4px;
+  position: relative;
+}
+
+.button-delete {
+  background-image: url("../images/header/delete-icon.svg");
+  background-repeat: no-repeat;
+  background-color: #FCFCFC;
+  color: #2D3440;
+  opacity: 0.4;
+  cursor: pointer;
+  position: absolute;
+  border: none;
+  top: 40px;
+  right: 29px;
+  width: 16px;
+  height: 16px;
+  display: none;
+  margin: 3px;
+}
+
+.field:focus-visible {
+  outline: none;
+}
+
+.popover-search:focus-within .button-delete {
+  display: block;
+}
+
+.button-delete:hover {
+  opacity: 0.6;
+}
+
+.button-delete:active {
+  opacity: 0.8;
 }
 
 .svg-enter-link {
