@@ -239,10 +239,6 @@ body {
   display: block;
 }
 
-.search-form {
-
-}
-
 .field {
   font-weight: 400;
   font-size: 16px;
@@ -337,19 +333,12 @@ body {
   padding-left: 16px;
   border: 1px solid #B9B9B9;
   border-radius: 4px;
+  font-family: "inter", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   color: rgba(45, 52, 64, 1);
   box-sizing: border-box;
-}
-
-.email-field {
-  letter-spacing: 0.012em;
-}
-
-.password-field {
-  letter-spacing: 0.13em;
 }
 
 :is(.email-field, .password-field):focus-visible {
@@ -370,6 +359,7 @@ body {
 }
 
 .button {
+  font-family: "inter", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -430,7 +420,7 @@ body {
   position: absolute;
   background-color: #FCFCFC;
   top: 40px;
-  right: 0;
+  right: -1px;
   z-index: 1;
   border-color: rgba(45, 52, 64, 0.12);
   border-radius: 4px;
@@ -449,33 +439,22 @@ body {
 }
 
 .popover-basket-item {
-  display: grid;
+  display: flex;
+  width: 345px;
   align-items: center;
-  gap: 5px;
-  grid-template-columns: 324px 14px;
 }
 
 .popover-basket-item + .popover-basket-item {
   margin-top: 24px;
 }
 
-.popover-basket-item:last-child::before {
-  width: 345px;
-  height: 1px;
-  background-color: rgba(231, 231, 231, 1);
-  content: "";
-  position: absolute;
-  top: 257px;
-  left: 47px;
-}
-
 .popover-basket-link {
   grid-column: 1/2;
   display: grid;
-  grid-template-columns: 151px 105px;
+  grid-template-columns: 151px 80px;
   grid-template-rows: auto auto;
   text-decoration: none;
-  padding-left: 61px;
+  padding-left: 63px;
 }
 
 .raspberry-link {
@@ -510,7 +489,7 @@ body {
 
 .basket-price {
   color: #2D3440;
-  margin: 1px 0 0 14px;
+  margin: 1px 0 0 13px;
   grid-column: 2/3;
   font-weight: 700;
   font-size: 18px;
@@ -519,14 +498,41 @@ body {
 }
 
 .button-delete-icon {
-  grid-column: 2/3;
-  background-image: url("../images/header/delete-icon.svg");
+  background-image: url(../images/header/delete-icon.svg);
   background-repeat: no-repeat;
   cursor: pointer;
   background-color: #FCFCFC;
   border: none;
-  background-position: 2px 3px;
+  background-position: 4px 3px;
   padding: 8px;
+  margin-left: auto;
+  align-items: center;
+}
+
+.popover-basket-total {
+  margin-top: 64px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.popover-basket-total::before {
+  width: 345px;
+  height: 1px;
+  background-color: rgba(231, 231, 231, 1);
+  content: "";
+  position: absolute;
+  top: -33px;
+  left: -2px;
+}
+
+.text-total {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  margin: 0 0 0 auto;
+  padding-top: 2px;
+  text-align: center;
 }
 
 .current {
