@@ -556,6 +556,100 @@ body {
   margin: 0;
 }
 
+.page-main {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.promotions {
+}
+
+.promotions-title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  text-align: center;
+  margin-bottom: 55px;
+}
+
+.promotions-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+  list-style-type: none;
+}
+
+.promotions-item {
+  width: 570px;
+  background-color: #FF7799;
+  border-radius: 16px;
+  padding: 36px;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+}
+
+.raspberry-item {
+  background-image: url("../images/promotions/promotions-raspberry.png");
+  background-size: 219px 268px;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+.marshmallow-item {
+  background-image: url("../images/promotions/promotions-marshmallow.png");
+  background-size: 219px 268px;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+.promotions-item-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  margin: 0 0 28px 0;
+}
+
+.promotions-item-text {
+  width: 328px;
+  margin: 0 0 28px 0;
+}
+
+.main-button {
+  display: inline-block;
+  box-sizing: border-box;
+  font-family: "inter", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 12px 32px;
+  border: none;
+  color: #2D3440;
+  background-color: #FCFCFC;
+  border-radius: 26px;
+  outline: 4px solid rgba(252, 252, 252, 0.4);
+  text-decoration: none;
+}
+
+.main-button:hover {
+  background-color: rgba(252, 252, 252, 0.4);
+  outline: 4px solid #FCFCFC;
+}
+
+.main-button:active {
+  outline: 2px solid #2D3440;
+}
+
+.main-button:focus-visible {
+  background-color:  rgba(252, 252, 252, 0.5);
+  outline: 2px solid #2D3440;
+}
+
+.main-button:disabled {
+  background-color: #E7E7E7;
+  outline: 4px solid rgba(252, 252, 252, 0.4);
+}
+
 .current {
   color: #FCFCFC;
   background-color: #FF4A78;
