@@ -78,7 +78,6 @@ body {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   padding: 2px 0;
   margin-left: 16px;
   min-width: 400px;
@@ -96,15 +95,15 @@ body {
   border-radius: 30px;
 }
 
-:is(.navigation-link, .navigation-user-link):hover {
+:is(.navigation-link, .navigation-user-link, .navigation-user-button):hover {
   background-color: rgba(252, 252, 252, 0.5);
 }
 
-:is(.navigation-link, .navigation-user-link):active {
+:is(.navigation-link, .navigation-user-link, .navigation-user-button):active {
   background-color: #FCFCFC;
 }
 
-:is(.navigation-link, .navigation-user-link):focus-visible {
+:is(.navigation-link, .navigation-user-link, .navigation-user-button):focus-visible {
   background-color: rgba(252, 252, 252, 0.5);
   outline: 2px solid #2D3440;
   outline-offset: -1px;
@@ -203,16 +202,17 @@ body {
   position: relative;
 }
 
-.navigation-user-link {
-  display: block;
-  text-align: center;
-  color: #2D3440;
-  text-decoration: none;
+.navigation-user-button {
+  font-family: "inter", sans-serif;
   font-size: 14px;
-  padding: 6px 16px 6px 38px;
+  line-height: 20px;
+  border: none;
   background-color: rgba(252, 252, 252, 0.3);
   border-radius: 30px;
+  padding: 6px 16px 6px 38px;
+  cursor: pointer;
   position: relative;
+  color: #2D3440;
 }
 
 .search-link {
