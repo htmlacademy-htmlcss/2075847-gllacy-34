@@ -27,7 +27,7 @@ body {
   font-size: 16px;
   line-height: 22px;
   color: #2D3440;
-  margin: 0;
+  margin: 0 auto;
   background-color: #FEAFC3;
   width: 1366px;
 }
@@ -86,6 +86,7 @@ body {
 
 .navigation-item {
   margin-bottom: 16px;
+  position: relative;
 }
 
 .navigation-link {
@@ -113,11 +114,14 @@ body {
   background-color: #FCFCFC;
   list-style-type: none;
   padding: 8px 0;
+  border-radius: 4px;
   display: flex;
   flex-direction: column;
   font-size: 14px;
   position: absolute;
-  top: 54px;
+  min-width: 135px;
+  top: 36px;
+  z-index: 1;
 }
 
 .navigation-catalog-list::before {
@@ -137,7 +141,7 @@ body {
   display: flex;
   color: #2D3440;
   text-decoration: none;
-  padding: 6px 16px;
+  padding: 6px 13px 6px 16px;
 }
 
 .navigation-catalog-item:first-child .navigation-catalog-link:before {
@@ -146,7 +150,8 @@ body {
   width: 103px;
   height: 1px;
   background-color: #B9B9B9;
-  top: 40px;
+  top: 39px;
+  left: 16px;
 }
 
 .navigation-catalog-item:first-child  .navigation-catalog-link{
