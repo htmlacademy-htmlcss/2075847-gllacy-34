@@ -256,6 +256,10 @@ body {
   position: relative;
 }
 
+input[type='search']::-webkit-search-decoration {
+  display: none;
+}
+
 .button-delete {
   background-image: url("../images/header/delete-icon.svg");
   background-repeat: no-repeat;
@@ -378,22 +382,23 @@ body {
   box-sizing: border-box;
 }
 
-.button:hover {
+:is(.button, .link-total):hover {
   background: rgba(252, 252, 252, 0.3);
   outline: 4px solid #FF2F64;
   color: #2D3440;
 }
 
-.button:active {
+:is(.button, .link-total):active {
   background-color: #FEAFC3;
   outline: 2px solid #2D3440;
 }
 
-.button:focus-visible {
+:is(.button, .link-total):focus-visible {
   outline: 2px solid #2D3440;
+  outline-offset: -1px;
 }
 
-.button:disabled {
+:is(.button, .link-total):disabled {
   background: #B9B9B9;
   outline: 4px solid rgba(185, 185, 185, 0.3);
   font-weight: 400;
@@ -519,6 +524,17 @@ body {
   display: flex;
   align-items: center;
   position: relative;
+}
+
+.link-total {
+  font-family: "inter", sans-serif;
+  font-weight: 700;
+  color: #FCFCFC;
+  padding: 12px 32px;
+  background: #FF2F64;
+  outline: 4px solid rgba(255, 47, 100, 0.3);
+  border-radius: 26px;
+  text-decoration: none;
 }
 
 .popover-basket-total::before {
@@ -672,4 +688,3 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
