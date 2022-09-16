@@ -562,6 +562,7 @@ body {
 }
 
 .promotions {
+  margin-bottom: 51px;
 }
 
 .promotions-title {
@@ -670,7 +671,7 @@ body {
 
 .best-goods {
   width: 1170px;
-  margin: 29px 0 auto;
+  margin: 29px 0 80px 0;
   position: relative;
 }
 
@@ -899,4 +900,114 @@ body {
 .slider-three {
   display: none;
 }
+
+
+.products {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.products-title {
+  width: 527px;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  margin: 0 auto 107px;
+  text-align: center;
+}
+
+.products-card-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 30px;
+  row-gap: 80px;
+}
+
+.products-card-item {
+  width: 270px;
+  background-color: #FCFCFC;
+  border-radius: 8px;
+  padding: 16px 40px 24px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.products-card-image {
+  display: block;
+  margin: -67px auto 0;
+}
+
+.products-card-title {
+  margin: 0 auto 8px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.products-card-text {
+  margin: 0 0 16px 0;
+  text-align: center;
+}
+
+.products-card-wrap{
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+}
+
+.products-card-price {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 31px;
+  margin: 0;
+}
+
+.products-card-button {
+  width:32px;
+  height: 32px;
+  border: none;
+  background-color: #FF2F64;
+  border-radius: 50%;
+  color: #FCFCFC;
+  position: relative;
+  cursor: pointer;
+}
+
+.products-card-button:hover {
+  background-color: #FCFCFC;
+  outline: 2px solid #FF2F64;
+  outline-offset: -2px;
+  color: #2D3440;
+}
+
+.products-card-button:active {
+  background-color: #FFCBD8;
+  color: #2D3440;
+  outline: 2px solid #FF2F64;
+  outline-offset: -2px;
+}
+
+.products-card-button:focus-visible {
+  outline: 2px solid #2D3440;
+  outline-offset: -2px;
+}
+
+.products-card-button:disabled {
+  background-color:  #B9B9B9;
+  color: #565C66;
+  outline: none;
+  cursor: auto;
+}
+
+.svg-card-button {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+}
+
 
