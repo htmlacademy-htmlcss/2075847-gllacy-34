@@ -1079,7 +1079,34 @@ body {
   background-repeat: no-repeat;
 }
 
+.subscription {
 
+}
 
+.subscription-blog {
+  width: 570px;
+  background-image: url("../images/subscription/blog-jpg.jpg");
+  background-repeat: no-repeat;
+  background-color: #FCFCFC;
+  min-height: 224px;
+  padding: 32px;
+  box-sizing: border-box;
+  border-radius: 16px;
+}
+
+.subscription-blog-title {
+  font-size: 16px;
+  line-height: 20px;
+  color: #565C66;
+  margin: 0 0 13px;
+}
+
+.subscription-blog-link {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  display: block;
+  width: 303px;
+}
 
 
