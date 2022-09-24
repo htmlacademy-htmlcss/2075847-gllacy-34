@@ -290,14 +290,17 @@
     <section class="subscription">
       <article class="subscription-blog">
         <p class="subscription-blog-title">Новое в нашем блоге</p>
-        <a class="subscription-blog-link">10&nbsp;способов сервировки фруктовых щербетов к&nbsp;столу</a>
+        <a class="subscription-blog-link" href="#">10&nbsp;способов сервировки фруктовых щербетов к&nbsp;столу</a>
       </article>
-      <article class="subscription-form">
-        <p class="subscription-form-title">Подпишитесь на&nbsp;нашу сладкую рассылку и&nbsp;будьте всегда в&nbsp;курсе всего самого вкусного, что у&nbsp;нас происходит. Обещаем не&nbsp;спамить и&nbsp;не&nbsp;слать всякой ненужной ерунды. Честно =)</p>
-        <form class="enter-form" action="https://echo.htmlacademy.ru/" method="get">
-          <label class="visually-hidden" for="email-form">Логин</label>
-          <input class="email-field" required placeholder="email@example.com" type="email" name="email-form" id="email-form">
-        </form>
+      <article class="subscription-box">
+        <div class="subscription-box-wrap">
+          <p class="subscription-box-title">Подпишитесь на&nbsp;нашу сладкую рассылку и&nbsp;будьте всегда в&nbsp;курсе всего самого вкусного, что у&nbsp;нас происходит. Обещаем не&nbsp;спамить и&nbsp;не&nbsp;слать всякой ненужной ерунды. Честно =)</p>
+          <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="get">
+            <label class="visually-hidden" for="subscription-form">email.</label>
+            <input class="subscription-field" required placeholder="email@example.com" type="email" name="subscription-form" id="subscription-form">
+            <button class="button" type="button">Отправить</button>
+          </form>
+        </div>
       </article>
     </section>
   </main>

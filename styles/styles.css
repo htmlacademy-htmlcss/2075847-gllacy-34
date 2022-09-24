@@ -1080,7 +1080,10 @@ body {
 }
 
 .subscription {
-
+  display: grid;
+  align-items: start;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
 }
 
 .subscription-blog {
@@ -1107,6 +1110,56 @@ body {
   line-height: 30px;
   display: block;
   width: 303px;
+  color: #2d3440;
+  text-decoration: none;
+}
+
+.subscription-blog-link:hover {
+  opacity: 0.5;
+}
+
+.subscription-box {
+  width: 570px;
+  min-height: 224px;
+  background-image: url("../images/subscription/sub-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 6px;
+  box-sizing: border-box;
+  border-radius: 16px;
+}
+
+.subscription-box-wrap {
+  background-color: #ffffff;
+  width: 558px;
+  min-height: 212px;
+  padding: 26px;
+  box-sizing: border-box;
+  border-radius: 16px;
+}
+
+.subscription-box-title {
+  margin: 0;
+  padding-bottom: 42px;
+}
+
+.subscription-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.subscription-field {
+  width: 332px;
+  height: 48px;
+  font-family: "inter", sans-serif;
+  padding: 0;
+  border: 1px solid #B9B9B9;
+  border-radius: 4px;
+  padding-left: 16px;
+  font-size: 16px;
+  line-height: 20px;
+  box-sizing: border-box;
 }
 
 
