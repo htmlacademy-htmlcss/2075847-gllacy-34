@@ -78,7 +78,6 @@ body {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   padding: 2px 0;
   margin-left: 16px;
   min-width: 400px;
@@ -86,6 +85,7 @@ body {
 
 .navigation-item {
   margin-bottom: 16px;
+  position: relative;
 }
 
 .navigation-link {
@@ -95,15 +95,15 @@ body {
   border-radius: 30px;
 }
 
-:is(.navigation-link, .navigation-user-link):hover {
+:is(.navigation-link, .navigation-user-link, .navigation-user-button):hover {
   background-color: rgba(252, 252, 252, 0.5);
 }
 
-:is(.navigation-link, .navigation-user-link):active {
+:is(.navigation-link, .navigation-user-link, .navigation-user-button):active {
   background-color: #FCFCFC;
 }
 
-:is(.navigation-link, .navigation-user-link):focus-visible {
+:is(.navigation-link, .navigation-user-link, .navigation-user-button):focus-visible {
   background-color: rgba(252, 252, 252, 0.5);
   outline: 2px solid #2D3440;
   outline-offset: -1px;
@@ -113,11 +113,14 @@ body {
   background-color: #FCFCFC;
   list-style-type: none;
   padding: 8px 0;
+  border-radius: 4px;
   display: flex;
   flex-direction: column;
   font-size: 14px;
   position: absolute;
-  top: 54px;
+  min-width: 135px;
+  top: 36px;
+  z-index: 1;
 }
 
 .navigation-catalog-list::before {
@@ -137,7 +140,7 @@ body {
   display: flex;
   color: #2D3440;
   text-decoration: none;
-  padding: 6px 16px;
+  padding: 6px 13px 6px 16px;
 }
 
 .navigation-catalog-item:first-child .navigation-catalog-link:before {
@@ -146,7 +149,8 @@ body {
   width: 103px;
   height: 1px;
   background-color: #B9B9B9;
-  top: 40px;
+  top: 39px;
+  left: 16px;
 }
 
 .navigation-catalog-item:first-child  .navigation-catalog-link{
@@ -198,16 +202,17 @@ body {
   position: relative;
 }
 
-.navigation-user-link {
-  display: block;
-  text-align: center;
-  color: #2D3440;
-  text-decoration: none;
+.navigation-user-button {
+  font-family: "inter", sans-serif;
   font-size: 14px;
-  padding: 6px 16px 6px 38px;
+  line-height: 20px;
+  border: none;
   background-color: rgba(252, 252, 252, 0.3);
   border-radius: 30px;
+  padding: 6px 16px 6px 38px;
+  cursor: pointer;
   position: relative;
+  color: #2D3440;
 }
 
 .search-link {
@@ -249,6 +254,10 @@ body {
   border: 1px solid #B9B9B9;
   border-radius: 4px;
   position: relative;
+}
+
+input[type='search']::-webkit-search-decoration {
+  display: none;
 }
 
 .button-delete {
@@ -373,22 +382,23 @@ body {
   box-sizing: border-box;
 }
 
-.button:hover {
+:is(.button, .link-total):hover {
   background: rgba(252, 252, 252, 0.3);
   outline: 4px solid #FF2F64;
   color: #2D3440;
 }
 
-.button:active {
+:is(.button, .link-total):active {
   background-color: #FEAFC3;
   outline: 2px solid #2D3440;
 }
 
-.button:focus-visible {
+:is(.button, .link-total):focus-visible {
   outline: 2px solid #2D3440;
+  outline-offset: -1px;
 }
 
-.button:disabled {
+:is(.button, .link-total):disabled {
   background: #B9B9B9;
   outline: 4px solid rgba(185, 185, 185, 0.3);
   font-weight: 400;
@@ -516,6 +526,17 @@ body {
   position: relative;
 }
 
+.link-total {
+  font-family: "inter", sans-serif;
+  font-weight: 700;
+  color: #FCFCFC;
+  padding: 12px 32px;
+  background: #FF2F64;
+  outline: 4px solid rgba(255, 47, 100, 0.3);
+  border-radius: 26px;
+  text-decoration: none;
+}
+
 .popover-basket-total::before {
   width: 345px;
   height: 1px;
@@ -579,6 +600,7 @@ body {
   justify-content: space-between;
   padding: 0;
   list-style-type: none;
+  align-items: start;
 }
 
 .promotions-item {
@@ -1078,8 +1100,3 @@ body {
   background-image: url("../images/peculiarities/thermometer-svg.svg");
   background-repeat: no-repeat;
 }
-
-
-
-
-
