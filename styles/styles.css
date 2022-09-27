@@ -1084,6 +1084,7 @@ body {
   align-items: start;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
+  margin-bottom: 80px;
 }
 
 .subscription-blog {
@@ -1165,3 +1166,74 @@ body {
   margin: 2px 4px 0 0;
 }
 
+.delivery {
+  width: 1170px;
+  min-height: 534px;
+  border-radius: 16px;
+  background-color: #F2F2F3;
+  background-image: url("../images/subscription/delivery-bckgrnd.jpg");
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 64px 64px 64px 100px;
+  box-sizing: border-box;
+  gap: 10px;
+}
+
+.delivery-wrap {
+  width: 371px;
+  margin: 0;
+}
+
+.delivery-title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  margin: 0 0 24px 0;
+  padding-top: 103px;
+}
+
+.delivery-text {
+  color: #565C66;
+  margin: 0;
+}
+
+.delivery-form {
+  width: 500px;
+  border-radius: 8px;
+  background-color: #FCFCFC;
+  display: grid;
+  grid-template-areas:
+"text text"
+"date phone"
+"address address";
+  grid-template-columns: 117px 1fr;
+  padding: 40px;
+  box-sizing: border-box;
+  gap: 16px;
+}
+
+:is(.date-container, .phone-container, .address-container) {
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.delivery-form-text {
+  color: #565C66;
+  grid-area: text;
+  margin: 0;
+}
+
+.date-container {
+  grid-area: date;
+}
+
+.phone-container {
+  grid-area: phone;
+}
+
+.address-container {
+  grid-area: address;
+}
