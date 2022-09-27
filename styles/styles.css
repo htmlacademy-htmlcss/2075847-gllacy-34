@@ -1140,7 +1140,7 @@ body {
 
 .subscription-box-title {
   margin: 0;
-  padding-bottom: 42px;
+  padding-bottom: 44px;
 }
 
 .subscription-form {
@@ -1153,13 +1153,15 @@ body {
   width: 332px;
   height: 48px;
   font-family: "inter", sans-serif;
-  padding: 0;
+  padding: 0 0 0 16px;
   border: 1px solid #B9B9B9;
   border-radius: 4px;
-  padding-left: 16px;
   font-size: 16px;
   line-height: 20px;
   box-sizing: border-box;
 }
 
+.subscription-button {
+  margin: 2px 4px 0 0;
+}
 
