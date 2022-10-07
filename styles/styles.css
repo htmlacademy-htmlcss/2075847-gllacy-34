@@ -1628,3 +1628,51 @@ input[type='search']::-webkit-search-decoration {
   display: block;
   margin-left: auto;
 }
+
+.main-inner {
+  width: 1170px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+.breadcrumbs {
+  list-style-type: none;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.breadcrumbs-item {
+
+}
+
+.breadcrumbs-link {
+  color: #2D3440;
+  text-decoration: none;
+}
+
+.catalog-filter-wrap {
+  display: flex;
+}
+
+.range-scale {
+  position: relative;
+  height: 4px;
+  margin-bottom: 16px;
+  background-color: #242424;
+  border-radius: 2px;
+}
+
+.range-input {
+  background-color: transparent;
+  border: none;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
