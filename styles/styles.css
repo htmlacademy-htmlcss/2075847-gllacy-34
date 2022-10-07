@@ -1483,7 +1483,19 @@ input[type='search']::-webkit-search-decoration {
   color: #2D3440;
   text-decoration: none;
   margin-left: 24px;
-  display: block;
+  display: inline-block;
+}
+
+:is(.footer-item-link, .footer-htmlacademy-link, .htmlacademy-link, .feedback-phone-link):hover {
+  opacity: 0.5;
+}
+
+:is(.footer-item-link, .footer-htmlacademy-link, .htmlacademy-link, .feedback-phone-link):focus-visible {
+  outline: 2px solid #2D3440;
+}
+
+:is(.footer-item-link, .footer-htmlacademy-link, .htmlacademy-link, .feedback-phone-link):active {
+  opacity: 0.3;
 }
 
 .footer-item-link-selected {
@@ -1528,7 +1540,6 @@ input[type='search']::-webkit-search-decoration {
   background-color: #2D3440;
   opacity: 0.5;
 }
-
 
 .modal-container {
   position: fixed;
