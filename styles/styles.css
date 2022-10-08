@@ -1712,6 +1712,7 @@ input[type='search']::-webkit-search-decoration {
 
 .sorting-container {
   margin-right: 24px;
+  margin-bottom: 16px;
 }
 
 .sorting-tittle {
@@ -1748,7 +1749,7 @@ input[type='search']::-webkit-search-decoration {
   width: 196px;
   padding: 0;
   border: none;
-  margin: 0 24px 0 0;
+  margin: 0 24px 16px 0;
 }
 
 .catalog-filter-wrap {
@@ -1884,7 +1885,7 @@ input[type='search']::-webkit-search-decoration {
 
 .fat-content {
   padding: 0;
-  margin: 0;
+  margin: 0 24px 16px 0;
   border: none;
 }
 
@@ -1945,6 +1946,20 @@ input[type='search']::-webkit-search-decoration {
   border: 2px solid #FCFCFC;
 }
 
+.control-input[type="radio"]:disabled + .control-mark {
+  border: 2px solid #B9B9B9;
+  cursor: auto;
+}
+
+.control-input[type="radio"]:disabled ~ .control-label {
+  cursor: auto;
+  color: #B9B9B9;
+}
+
+.control-input[type="radio"]:checked:disabled ~ .control-mark::before {
+  background-color: #B9B9B9;
+}
+
 .control-mark {
   position: absolute;
   left: 0;
@@ -1955,4 +1970,70 @@ input[type='search']::-webkit-search-decoration {
   border: 2px solid #2D3440;
   display: block;
   box-sizing: border-box;
+}
+
+.filter-content {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.filter-content-tittle {
+  margin: 0 0 8px 16px;
+  padding: 0;
+}
+
+.filter-content-list {
+  margin: 0;
+  padding: 10px 24px;
+  list-style-type: none;
+  display: flex;
+  background-color: rgba(252, 252, 252, 0.3);
+  border-radius: 18px;
+}
+
+.filter-content-item + .filter-content-item {
+  margin-left: 16px;
+}
+
+.filter-control {
+  position: relative;
+  cursor: pointer;
+}
+
+.filter-control-mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #2D3440;
+}
+
+.filter-control-mark-selected {
+  display: none;
+}
+
+.filter-control-input[type="checkbox"]:checked ~ .filter-control-mark {
+  display: none;
+}
+
+.filter-control-input[type="checkbox"]:checked ~ .filter-control-mark-selected {
+  display: block;
+}
+
+.filter-control-input[type="checkbox"]:hover ~ .filter-control-mark {
+  color: #FCFCFC;
+}
+
+.filter-control-input[type="checkbox"]:disabled ~ .filter-control-mark {
+  color: #B9B9B9;
+  cursor: auto;
+}
+
+.filter-control-input[type="checkbox"]:disabled ~ .filter-control-label {
+  color: #B9B9B9;
+  cursor: auto;
+}
+
+.filter-control-label {
+  padding-left: 24px;
 }
