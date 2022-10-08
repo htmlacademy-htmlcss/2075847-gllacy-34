@@ -139,31 +139,68 @@
             <option value="cheap">сначала дешёвое</option>
             <option value="expensive">сначала дорогое</option>
           </select>
-          <fieldset class="catalog-filter-group">
+        </div>
+        <fieldset class="catalog-filter-group">
             <span class="catalog-filter-wrap">
               <legend class="catalog-filter-tittle">Цена:</legend>
               <div class="range-wrapper-inputs">
                 <label class="catalog-filter-label">
                   <input class="range-input" type="number" value="100" name="min-price">₽
                 </label>
-                <label class="catalog-filter-label">
-                  &mdash;<input class="range-input" type="number" value="500" name="max-price" style="width: 37px">₽
+                <label class="catalog-filter-label filter-label-max">
+                  –<input class="range-input" type="number" value="500" name="max-price">₽
                 </label>
               </div>
             </span>
-            <div class="range">
-              <div class="range-scale">
-                <div class="range-bar" style="left: 42px; width: 136px">
-                  <button class="range-toggle toggle-min">
-                    <span class="visually-hidden">Изменить минимальную цену.</span>
-                  </button>
-                  <button class="range-toggle toggle-max">
-                    <span class="visually-hidden">Изменить максимальную цену.</span>
-                  </button>
-                </div>
+          <div class="range">
+            <div class="range-scale">
+              <div class="range-bar" style="left: 40px; width: 56px">
+                <button class="range-toggle toggle-min">
+                  <span class="visually-hidden">Изменить минимальную цену.</span>
+                </button>
+                <button class="range-toggle toggle-max">
+                  <span class="visually-hidden">Изменить максимальную цену.</span>
+                </button>
               </div>
-          </fieldset>
-        </div>
+            </div>
+        </fieldset>
+        <fieldset class="fat-content">
+          <legend class="fat-content-tittle">Жирность:</legend>
+          <ul class="fat-content-list">
+            <li class="fat-content-item">
+              <label class="control">
+                <input class="visually-hidden" type="checkbox" checked name="">
+                <span class="control-mark"></span>
+                <span class="control-label"></span>
+                0%
+              </label>
+            </li>
+            <li class="fat-content-item">
+              <label class="control">
+                <input class="visually-hidden" type="checkbox" checked name="">
+                <span class="control-mark"></span>
+                <span class="control-label"></span>
+                до 10%
+              </label>
+            </li>
+            <li class="fat-content-item">
+              <label class="control">
+                <input class="visually-hidden" type="checkbox" checked name="">
+                <span class="control-mark"></span>
+                <span class="control-label"></span>
+                до 30%
+              </label>
+            </li>
+            <li class="fat-content-item">
+              <label class="control">
+                <input class="visually-hidden" type="checkbox" checked name="">
+                <span class="control-mark"></span>
+                <span class="control-label"></span>
+                выше 30%
+              </label>
+            </li>
+          </ul>
+        </fieldset>
         <button class="catalog-filter-form-button main-button" type="submit">Применить</button>
       </form>
     </section>
