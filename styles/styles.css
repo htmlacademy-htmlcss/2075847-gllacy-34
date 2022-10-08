@@ -1898,13 +1898,19 @@ input[type='search']::-webkit-search-decoration {
   margin: 0;
   list-style-type: none;
   display: flex;
-  padding: 8px 24px;
+  flex-wrap: wrap;
+  padding: 8px 24px 0;
   background-color: rgba(252, 252, 252, 0.3);
   border-radius: 18px;
+  max-width: 655px;
 }
 
-.fat-content-item + .fat-content-item {
-  margin-left: 16px;
+.fat-content-item {
+  margin-bottom: 8px;
+}
+
+.fat-content-item:not(:last-child) {
+  margin-right: 16px;
 }
 
 .control {
@@ -1973,9 +1979,10 @@ input[type='search']::-webkit-search-decoration {
 }
 
 .filter-content {
-  margin: 0;
+  margin: 0 16px 16px 0;
   padding: 0;
   border: none;
+
 }
 
 .filter-content-tittle {
@@ -1985,15 +1992,21 @@ input[type='search']::-webkit-search-decoration {
 
 .filter-content-list {
   margin: 0;
-  padding: 10px 24px;
+  padding: 10px 24px 2px;
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
   background-color: rgba(252, 252, 252, 0.3);
   border-radius: 18px;
+  max-width: 900px;
 }
 
-.filter-content-item + .filter-content-item {
-  margin-left: 16px;
+.filter-content-item {
+  margin-bottom: 8px;
+}
+
+.filter-content-item:not(:last-child) {
+  margin-right: 17px;
 }
 
 .filter-control {
@@ -2037,3 +2050,40 @@ input[type='search']::-webkit-search-decoration {
 .filter-control-label {
   padding-left: 24px;
 }
+
+.catalog-filter-form-button {
+  border: 2px solid #FCFCFC;
+  background-color: rgba(252, 252, 252, 0.3);
+  padding: 8px 52px;
+  border-radius: 20px;
+  display: block;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: inherit;
+  align-self: end;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+
+.catalog-filter-form-button:hover {
+  background-color: #FCFCFC;
+}
+
+.catalog-filter-form-button:active {
+  background-color: rgba(252, 252, 252, 0.3);
+  border-color: transparent;
+}
+
+.catalog-filter-form-button:focus-visible {
+  outline: 2px solid #2D3440;
+  outline-offset: -2px;
+}
+
+.catalog-filter-form-button:disabled {
+  background-color: rgba(252, 252, 252, 0.3);
+  opacity: 0.4;
+  cursor: auto;
+  border: 2px solid #FCFCFC;
+}
+
