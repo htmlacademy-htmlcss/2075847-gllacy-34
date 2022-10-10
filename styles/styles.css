@@ -235,7 +235,7 @@ body {
   background-color: #FCFCFC;
   top: 40px;
   right: 0;
-  z-index: 1;
+  z-index: 2;
   padding: 24px 16px;
   border-color: rgba(45, 52, 64, 0.12);
   border-radius: 4px;
@@ -328,7 +328,7 @@ input[type='search']::-webkit-search-decoration {
   background-color: #FCFCFC;
   top: 40px;
   right: 0;
-  z-index: 1;
+  z-index: 2;
   padding: 48px 48px 52px 48px;
   border-color: rgba(45, 52, 64, 0.12);
   border-radius: 4px;
@@ -436,7 +436,7 @@ input[type='search']::-webkit-search-decoration {
   background-color: #FCFCFC;
   top: 40px;
   right: -1px;
-  z-index: 1;
+  z-index: 2;
   border-color: rgba(45, 52, 64, 0.12);
   border-radius: 4px;
 }
@@ -2005,7 +2005,7 @@ input[type='search']::-webkit-search-decoration {
   line-height: 20px;
   font-family: inherit;
   align-self: end;
-  margin-bottom: 16px;
+  margin: 0 16px 16px 0;
   cursor: pointer;
 }
 
