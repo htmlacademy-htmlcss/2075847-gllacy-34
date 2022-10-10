@@ -1698,17 +1698,18 @@ input[type='search']::-webkit-search-decoration {
   margin-bottom: 25px;
 }
 
-.catalog-filter-tittle {
-  padding: 0;
-  margin-left: 16px;
-}
 
 .range-wrapper-inputs {
   display: flex;
+  margin-bottom: 25px;
 }
 
 .catalog-filter-label {
   display: flex;
+}
+
+.filter-label-min {
+  margin-left: 16px;
 }
 
 .filter-label-max {
