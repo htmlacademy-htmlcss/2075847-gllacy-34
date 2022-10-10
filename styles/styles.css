@@ -1455,7 +1455,7 @@ input[type='search']::-webkit-search-decoration {
 
 .footer-list {
   list-style-type: none;
-  margin: 0 200px 0 auto;
+  margin: 0 0 0 299px;
   padding: 0;
   display: grid;
   grid-template-columns: auto auto;
@@ -1496,17 +1496,21 @@ input[type='search']::-webkit-search-decoration {
 }
 
 .footer-htmlacademy-container {
-  margin: 0 14px 0 0;
+  margin: 0 14px 0 auto;
 }
 
 .footer-htmlacademy-link {
-  margin-bottom: 14px;
+  margin: 0 9px 9px 0;
   display: inline-block;
   line-height: 0;
 }
 
+.htmlacademy-icon {
+  display: block;
+}
+
 .footer-htmlacademy-text {
-  margin: 0;
+  margin: 0 0 12px 0;
   font-size: 12px;
   line-height: 16px;
 }
