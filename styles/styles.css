@@ -955,13 +955,8 @@ input[type='search']::-webkit-search-decoration {
   row-gap: 80px;
 }
 
-.products-card-image {
-  display: block;
-  margin: -67px auto 0;
-}
-
 .products-card-tittle {
-  margin: 0 auto 10px;
+  margin: 0 auto 8px;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -969,15 +964,21 @@ input[type='search']::-webkit-search-decoration {
 }
 
 .products-card-text {
-  margin: 0 0 16px 0;
+  margin: 0;
   text-align: center;
+}
+
+.products-card-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
 }
 
 .products-card-price {
   font-weight: 700;
   font-size: 20px;
   line-height: 31px;
-  margin: 0;
+  margin-right: auto;
 }
 
 .products-card-button {
@@ -987,10 +988,8 @@ input[type='search']::-webkit-search-decoration {
   background-color: #FF2F64;
   border-radius: 50%;
   color: #FCFCFC;
-  position: absolute;
+  position: relative;
   cursor: pointer;
-  bottom: 24px;
-  right: 40px;
 }
 
 .products-card-button:hover {
@@ -1622,7 +1621,7 @@ input[type='search']::-webkit-search-decoration {
 }
 
 .inner-header {
-  margin-bottom: 78px;
+  margin-bottom: 79px;
 }
 
 .inner-header-tittle {
@@ -2027,7 +2026,7 @@ input[type='search']::-webkit-search-decoration {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   column-gap: 30px;
-  row-gap: 90px;
+  row-gap: 91px;
 }
 
 .searching-results-item {
@@ -2037,14 +2036,14 @@ input[type='search']::-webkit-search-decoration {
   flex-direction: column;
   border-radius: 8px;
   position: relative;
+  padding: 133px 40px 24px 40px;
+  box-sizing: border-box;
 }
 
 .products-card-link {
   color: #2D3440;
   text-decoration: none;
-  padding: 133px 40px 24px 40px;
-  box-sizing: border-box;
-  position: relative;
+  margin-bottom: 16px;
 }
 
 .products-card-link:hover {
@@ -2056,14 +2055,14 @@ input[type='search']::-webkit-search-decoration {
 }
 
 .products-card-link:focus-visible {
-  outline: 3px solid #2D3440;
+  outline: 2px solid #2D3440;
   outline-offset: -2px;
   -moz-outline-radius: 8px;
 }
 
 .products-card-image {
   position: absolute;
-  top: 16px;
+  top: -51px;
 }
 
 .pagination-container {
