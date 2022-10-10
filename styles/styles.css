@@ -1965,6 +1965,10 @@ input[type='search']::-webkit-search-decoration {
   color: #FCFCFC;
 }
 
+.filter-control-input[type="checkbox"]:focus-visible ~ .filter-control-mark {
+  color: #FCFCFC;
+}
+
 .filter-control-input[type="checkbox"]:disabled ~ .filter-control-mark {
   color: #B9B9B9;
   cursor: auto;
