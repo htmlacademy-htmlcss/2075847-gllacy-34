@@ -321,9 +321,11 @@
         <p class="delivery-title">Доставка любимого мороженого на&nbsp;дом</p>
         <p class="delivery-text">Хочется полакомиться любимым десертом, но&nbsp;нет времени съездить в&nbsp;магазин? Закажите доставку мороженого на&nbsp;дом, и&nbsp;курьер привезёт вам ваш заказ в&nbsp;течение часа!</p>
       </div>
-      <form class="delivery-form">
+      <div class="delivery-form-wrap">
         <p class="delivery-form-text">Укажите адрес и&nbsp;дату доставки, и&nbsp;мы&nbsp;свяжемся с&nbsp;вами, чтобы подтвердить заказ.</p>
-        <div class="date-container">
+
+        <form class="delivery-form">
+          <div class="date-container">
           <span class="label-delivery-date">
             <label class="label-delivery-date" for="delivery-date">Дата</label>
             <span class="tooltip">
@@ -333,13 +335,13 @@
               <span class="tooltip-text" role="tooltip" id="tooltip-label">Введите дату в формате ДД.ММ.ГГГГ</span>
             </span>
           </span>
-          <input class="input-delivery-date" type="text" id="delivery-date" name="delivery-date" placeholder="01.04.2020" required>
-        </div>
-        <div class="phone-container">
-          <label class="label-delivery-phone" for="delivery-phone">Телефон</label>
-          <input class="input-delivery-phone" type="tel" id="delivery-phone" name="delivery-phone" placeholder="+7 800 999-00-00" required>
-        </div>
-        <div class="address-container">
+            <input class="input-delivery-date" type="text" id="delivery-date" name="delivery-date" placeholder="01.04.2020" required>
+          </div>
+          <div class="phone-container">
+            <label class="label-delivery-phone" for="delivery-phone">Телефон</label>
+            <input class="input-delivery-phone" type="tel" id="delivery-phone" name="delivery-phone" placeholder="+7 800 999-00-00" required>
+          </div>
+          <div class="address-container">
           <span class="label-delivery-address">
             <label class="label-delivery-address" for="delivery-address">Адрес</label>
             <span class="tooltip">
@@ -349,10 +351,11 @@
               <span class="tooltip-text" role="tooltip" id="tooltip-address">Введите название улицы, дома и&nbsp;квартиры</span>
             </span>
           </span>
-          <input class="input-delivery-address" type="text" id="delivery-address" name="delivery-address" placeholder="ул. Большая Конюшенная, 19/8" required>
-        </div>
-        <button class="button button-form" type="submit">Отправить</button>
-      </form>
+            <input class="input-delivery-address" type="text" id="delivery-address" name="delivery-address" placeholder="ул. Большая Конюшенная, 19/8" required>
+          </div>
+          <button class="button button-form" type="submit">Отправить</button>
+        </form>
+      </div>
     </section>
     <section class="feedback">
       <h2 class="visually-hidden">Обратная связь</h2>
