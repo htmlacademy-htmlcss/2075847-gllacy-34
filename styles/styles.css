@@ -2113,10 +2113,6 @@ input[type='search']::-webkit-search-decoration {
   max-width: 450px;
 }
 
-.pagination-list-item {
-
-}
-
 .pagination-link {
   text-decoration: none;
   color: #2D3440;
