@@ -1181,6 +1181,7 @@ input[type='search']::-webkit-search-decoration {
   background-color: #F2F2F3;
   background-image: url("../images/subscription/delivery-bckgrnd.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 64px 64px 64px 100px;
@@ -1213,18 +1214,11 @@ input[type='search']::-webkit-search-decoration {
   border-radius: 8px;
   background-color: #FCFCFC;
   box-sizing: border-box;
-
 }
 
 .delivery-form {
-
-  display: grid;
-  grid-template-areas:
-  "date phone"
-  "address address"
-  "button button";
-  grid-template-columns: 117px 1fr;
-  column-gap: 16px;
+  display: flex;
+  flex-wrap: wrap;
   align-content: start;
 }
 
@@ -1237,13 +1231,12 @@ input[type='search']::-webkit-search-decoration {
 
 .delivery-form-text {
   color: #565C66;
-  grid-area: text;
   margin: 0 0 32px;
 }
 
 .date-container {
-  grid-area: date;
   margin-bottom: 20px;
+  margin-right: 16px;
 }
 
 .label-delivery-date {
@@ -1264,7 +1257,7 @@ input[type='search']::-webkit-search-decoration {
 }
 
 .phone-container {
-  grid-area: phone;
+  margin-bottom: 20px;
 }
 
 .label-delivery-phone {
@@ -1307,8 +1300,7 @@ input[type='search']::-webkit-search-decoration {
 }
 
 .button-form {
-  grid-area: button;
-  justify-self: center;
+  margin: auto;
 }
 
 .tooltip {
@@ -1378,6 +1370,7 @@ input[type='search']::-webkit-search-decoration {
   margin: 0 auto;
   background-image: url("../images/subscription/feedback-background.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
   padding: 64px;
   box-sizing: border-box;
   min-height: 492px;
